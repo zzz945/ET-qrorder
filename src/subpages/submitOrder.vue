@@ -46,6 +46,7 @@ export default {
   vuex: {
     getters: {
       tableid: (state) => state.tableid,
+      r_id: (state) => state.r_id,
       food_list: (state) => state.foodList,
       totalPrice
     },
@@ -62,8 +63,8 @@ export default {
 
       let params = {
         openid: openid,
-        r_id: '11',
-        t_id: '55',
+        r_id: this.r_id,
+        t_id: this.tableid,
         food_list: JSON.stringify(foodList)
       }
 

@@ -90,6 +90,7 @@ export default {
             }
             this.setStatus(1)
             this.setTableId(result.TABLE_ID)
+            this.setRid(result.RESTAURANT_ID)
           } catch (e) {
             console.log('_scanTableId:' + e)
             _this.$vux.alert.show({

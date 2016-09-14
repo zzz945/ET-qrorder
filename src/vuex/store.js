@@ -16,6 +16,7 @@ const state = {
   direction: 'forward',
   status: 0,
   tableid: -1,
+  r_id: -1,
   foodList: []
 }
 export default new Vuex.Store({
@@ -32,6 +33,9 @@ export default new Vuex.Store({
     },
     UPDATE_TABLEID (state, id) {
       state.tableid = id
+    },
+    UPDATE_RID (state, id) {
+      state.r_id = id
     },
     ADD_FOOD (state, food) {
       state.foodList.push(food)
